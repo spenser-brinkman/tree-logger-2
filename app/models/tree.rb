@@ -1,3 +1,13 @@
+# Table name: trees
+#
+#  id          :integer
+#  species_id  :integer
+#  name        :string
+#  user_id     :integer
+#  property_id :integer
+#  created_at  :datetime
+#  updated_at  :datetime
+#
 class Tree < ApplicationRecord
   belongs_to :species
   belongs_to :user

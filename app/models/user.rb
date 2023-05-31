@@ -1,3 +1,15 @@
+# Table name: users
+#
+#  id                   :integer
+#  name                 :string
+#  password_digest      :string
+#  google_token         :string
+#  google_refresh_token :string
+#  uid                  :string
+#  email                :string
+#  created_at           :datetime
+#  updated_at           :datetime
+#
 class User < ApplicationRecord
   validates :name, presence: true
   validate :password_complexity
