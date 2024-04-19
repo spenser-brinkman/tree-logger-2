@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     @errors = @user.errors
     if @user.save
       session[:user_id] = @user.id
-      redirect_to @user
+      redirect_to root_path
     else
       render 'new'
     end
